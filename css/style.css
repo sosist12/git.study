@@ -1,0 +1,224 @@
+@charset "UTF-8";
+html {
+  font-size: 12px;
+  font-family: "Montserrat","Nanum Gothic","돋움";
+}
+
+body {
+  line-height: 1.6;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.fixedarea::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+  transition: all .3s;
+}
+header.scrolled{
+  background-color: rgba(0,0,0,.5);
+}
+
+header .inner {
+  padding: 0 80px;
+}
+
+header .inner #logo {
+  float: left;
+  margin: 10px 40px 0 0;
+}
+
+header .inner #logo a {
+  width: 250px;
+  height: 50px;
+  background: url("../images/logo.png") no-repeat;
+  text-indent: -9999px;
+}
+
+header .inner #logo a:hover {
+  background-position: 0 -100px;
+}
+#gnb.scrolled{
+	color:#ff0;
+}
+#gnb {
+  margin: 20px;
+}
+
+#gnb li {
+  float: left;
+  position: relative;
+}
+
+#gnb a {
+  font-size: 14px;
+  font-weight: bold;
+  width: 100px;
+  padding: 0 10px;
+  text-align: center;
+  color: #fff;
+}
+
+#gnb a:hover {
+  color: #705acf;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#gnb .sub {
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+#gnb .sub li {
+  float: none;
+  margin-top: 3px;
+}
+
+#gnb li:hover .sub {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+#top_menu {
+  float: right;
+  margin: 0 20px 0 0;
+}
+
+#top_menu li {
+  float: left;
+  width: 60px;
+  padding: 0 10px;
+}
+
+#top_menu li:last-child a::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 9px;
+  background: url("../images/arrow.png") no-repeat center top;
+}
+
+#top_menu li:last-child a:hover::after {
+  background-position: center bottom;
+}
+
+#top_menu a {
+  font-weight: bold;
+  color: #fff;
+}
+
+#top_menu a:hover {
+  color: #000;
+}
+
+#main_view .slider article {
+  width: 100%;
+  height: 100vh;
+  background: no-repeat top right;
+  background-size: cover;
+}
+
+#main_view .slider .view1 {
+  background-image: url("../images/main_view.jpg");
+}
+
+#reservation {
+  padding: 10px 5%;
+  background: #aeaff0;
+}
+
+#reservation .inner {
+  background: #fff;
+}
+
+#reservation .inner h3 {
+  float: left;
+  margin: 40px 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#reservation .inner li {
+  float: left;
+  width: 20%;
+}
+
+#reservation .inner a {
+  width: 80%;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  font-weight: bold;
+  height: 2em;
+  line-height: 2em;
+}
+#Reserv li{padding-left:4px;margin-top:15px;}
+#Reserv input{
+	width:200px;
+	height:40px;
+	font-size:16px;
+	text-align:center;	
+}
+#Reserv select{
+	width:200px;
+	height:40px;
+	font-size:16px;
+	text-align:center;
+}
+#submit{
+	margin-top:30px;
+	right:100px;
+	position:absolute;
+	font-size:12px;
+	width:80px;
+	height:50px;
+}
+
+#footer {padding:40px 50px; background-color:#d1d6ff;} 
+#footer::after{content:''; display:block; clear:both;}
+#footer .inner{margin:0 auto; width:1400px;}
+ #footer .logo {float:left; margin: 0 50px 20px 0;}
+ 
+ #footer #footer_menu {float:left; font-size:16px;  font-weight:bold; padding-bottom:8px; width:1050px; border-bottom:2px solid #b4bcff; margin-bottom:20px;}
+ #footer #footer_menu li{display:inline; margin-right:10px;  }
+ #footer #footer_menu li a{text-decoration:none;font-family:"에스코어 드림 5 Medium"; color:#000;}
+  
+ #footer #info {float:left;; font-size:14px;}
+ #footer #info p{margin-bottom:10px;}
+ #footer #info strong{font-weight:bold;}
+ #footer #info span {margin-right:5px;}
+ #footer #info span::after{content:" l " ; margin-left:5px; color:#888;}
+ #footer #info span:nth-child(3n)::after{display:none;}
+ 
+ #footer #sns{float:right; font-family:Arial, Helvetica, sans-serif; font-weight:bold; font-size:14px; margin-right:40px;}
+ #footer #sns h2{margin-bottom:5px;}
+ #footer #sns li{display:inline-block; vertical-align:middle; margin-left:10px;}
+ #footer #sns li img{width:30px;}
+ #footer #sns li:first-child img{width:37px;}
+
+ #footer #copyright{float:left; clear:both; font-size:14px; color:#999;}
+ #footer #copyright strong{font-weight:bold; color:#666;}
